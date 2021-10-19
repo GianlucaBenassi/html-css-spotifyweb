@@ -196,7 +196,7 @@ main nav ul li a {
 /* ----- main sections ----- */
 
 main h2 {
-    margin: 20px 0 20px 10px;
+    margin-top: 30px
 }
 
 main h4 {
@@ -204,7 +204,16 @@ main h4 {
     margin: 5px 0;
 }
 
+main h5 {
+    margin-top: 10px;
+}
+
+main h2, h5 {
+    margin-left: 10px;
+}
+
 main .row {
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -367,10 +376,10 @@ footer {
     border: 1px solid black;
 } */
 
-.debug main .mix {
+/* .debug main .mix {
     height: 200px;
     background-color: lightblue;
-}
+} */
 
 .debug main .popular {
     height: 200px;
