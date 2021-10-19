@@ -42,9 +42,10 @@ a {
     text-decoration: none;
 }
 
-h2 {
+h2, h4 {
     color: white;
 }
+
 
 /* ***** header ***** */
 
@@ -175,21 +176,8 @@ main {
     right: 0;
 }
 
-main h2 {
-    margin: 20px 0 20px 10px;
-}
-
-main .row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-main .box-song {
-    width: calc(100% / 2 - 20px);
-    margin: 10px;
-}
-
 /* ----- nav ----- */
+
 main nav {
     text-align: center;
 }
@@ -204,6 +192,32 @@ main nav ul li a {
     text-transform: uppercase;
 }
 
+
+/* ----- main sections ----- */
+
+main h2 {
+    margin: 20px 0 20px 10px;
+}
+
+main h4 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+main .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .box-song {
+    width: calc(100% / 2 - 20px);
+    text-align: center;
+    margin: 10px;
+}
+
+main .box-song img {
+    width: 100%;
+}
 
 /* ***** footer ***** */
 
@@ -352,7 +366,7 @@ footer {
 
 .debug main .recent .box-song {
     background-color: orange;
-    height: 200px;
+    height: 300px;
     border: 1px solid black;
 }
 
