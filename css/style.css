@@ -9,5 +9,41 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+
+/* ***** header ***** */
+
+header {
+    display: flex;
+}
+
+.header-lt {
+    width: 50px;
+}
+
+.header-rt {
+    width: calc(100% - 50px);
+    height: 100px;
+}
+
+/* ***** aside menu ***** */
+
+/* ***** main ***** */
+
+/* ***** footer ***** */
+
+
+
+/* +++++ debug +++++ */
+
+.debug .header-lt {
+    height: 50px;
+    background-color: black;
+}
+
+.debug .header-rt {
+    background-color: #080B12;
 }
