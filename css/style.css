@@ -57,6 +57,11 @@ aside .menu-bottom {
 
 /* ***** main ***** */
 
+main {
+    background-color: #141922;
+    margin: 100px 0 0 50px;
+}
+
 /* ***** footer ***** */
 
 footer {
@@ -89,6 +94,7 @@ footer {
     background-color: #080B12;
 }
 
+
 .debug aside {
     background-color: green;
 }
@@ -97,6 +103,11 @@ footer {
 .debug aside .menu-bottom {
     height: 100px;
     border: 2px solid red;
+}
+
+
+.debug main {
+    height: 600px;
 }
 
 
