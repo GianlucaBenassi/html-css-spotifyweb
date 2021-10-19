@@ -25,6 +25,7 @@ footer {
     z-index: 1;
 }
 
+
 /* ***** header ***** */
 
 header {
@@ -33,6 +34,10 @@ header {
     top: 0;
     left: 0;
     right: 0;
+}
+
+.header-lt {
+    height: 50px;
 }
 
 .header-rt {
@@ -95,10 +100,52 @@ footer {
 }
 
 
+/* ##### S display ##### */
+
+@media screen and (min-width: 568px) {
+
+    .header-lt,
+    aside {
+        width: 200px;
+    }
+
+    .header-lt {
+        height: 100px;
+    }
+
+    .header-rt {
+        width: calc(100% - 200px);
+    }
+
+    aside {
+        height: calc(100vh - 200px);
+        top: 100px;
+    }
+
+    main {
+        left: 200px;
+    }
+}
+
+
+/* ##### MD display ##### */
+
+@media screen and (min-width: 768px) {
+
+}
+
+
+/* ##### LG display ##### */
+
+@media screen and (min-width: 1024px) {
+
+}
+
+
+
 /* +++++ debug +++++ */
 
 .debug .header-lt {
-    height: 50px;
     background-color: black;
 }
 
