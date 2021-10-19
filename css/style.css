@@ -13,6 +13,10 @@ body {
     color: white;
 }
 
+.hidden {
+    display: none;
+}
+
 
 .header-lt,
 aside {
@@ -39,6 +43,14 @@ header {
 
 .header-lt {
     height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-lt img {
+    width: 70%;
 }
 
 
@@ -118,6 +130,10 @@ footer {
 
 @media screen and (min-width: 569px) {
 
+    .hidden {
+        display: inline-block;
+    }
+
     .header-lt,
     aside {
         width: 200px;
@@ -125,6 +141,15 @@ footer {
 
     .header-lt {
         height: 100px;
+        justify-content: flex-start;
+    }
+
+    #small-logo {
+        display: none;
+    }
+
+    #big-logo {
+        margin-left: 10px;
     }
 
     .header-rt {
