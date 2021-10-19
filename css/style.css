@@ -301,6 +301,23 @@ footer {
         align-items: center;
     }
 
+    aside .menu-top {
+        display: flex;
+        flex-direction: column;
+        min-height: 340px;
+        overflow-y: hidden;
+    }
+
+    aside .menu-top .playlist {
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+
+    aside .menu-top .playlist ul {
+        overflow-y: auto;
+    }
+
     aside .menu-bottom .user {
         border-top: 1px solid white;
         padding-top: 10px;
@@ -351,8 +368,8 @@ footer {
     background-color: green;
 } */
 
-/* .debug aside .menu-top, */
-/* .debug aside .menu-bottom {
+/* .debug aside .menu-top,
+.debug aside .menu-bottom {
     height: 100px;
     border: 2px solid red;
 } */
