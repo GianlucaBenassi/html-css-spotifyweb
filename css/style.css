@@ -84,7 +84,7 @@ header {
     background-color: transparent;
     text-transform: uppercase;
     padding: 10px 25px;
-    margin-right: 5px;
+    margin-right: 10px;
     border: 1px solid white;
     border-radius: 20px;
 }
@@ -226,6 +226,10 @@ main .box-song {
 
 main .box-song img {
     width: 100%;
+}
+
+main .box-song.artist img {
+    border-radius: 50%;
 }
 
 /* ***** footer ***** */
@@ -381,10 +385,10 @@ footer {
     background-color: lightblue;
 } */
 
-.debug main .popular {
+/* .debug main .popular {
     height: 200px;
     background-color: tomato;
-}
+} */
 
 
 .debug footer .footer-col {
