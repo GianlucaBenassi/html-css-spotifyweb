@@ -36,13 +36,27 @@ header {
     right: 0;
 }
 
+
 .header-lt {
     height: 50px;
 }
 
+
 .header-rt {
     width: calc(100% - 50px);
     height: 100px;
+    text-align: right;
+    line-height: 100px;
+}
+
+#btn-upgrade {
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    margin-right: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 
 /* ***** aside menu ***** */
