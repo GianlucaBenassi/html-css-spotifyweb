@@ -97,15 +97,18 @@ aside .menu-bottom {
     width: 100%;
 }
 
-aside .menu-top > div {
+aside .menu-top > div,
+aside .menu-bottom > div {
     width: 100%;
     text-align: center;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 aside .menu-top .home span,
 aside .menu-top .search span,
-aside .menu-top .library span {
+aside .menu-top .library span,
+aside .menu-bottom .download span,
+aside .menu-bottom .user span {
     margin-left: 5px;
 }
 
@@ -132,6 +135,22 @@ aside .menu-top ul {
 
 aside .menu-top ul li {
     margin: 10px 0;
+}
+
+
+aside .menu-bottom .download img {
+    width: 20px;
+}
+
+aside .menu-bottom .user img {
+    background-color: #808080;
+    border-radius: 50%;
+    padding: 0 2px;
+}
+
+aside .menu-bottom .user span {
+    color: white;
+    font-weight: bold;
 }
 
 /* ***** main ***** */
@@ -200,21 +219,27 @@ footer {
     aside {
         height: calc(100vh - 200px);
         top: 100px;
+        padding: 0 20px;
     }
 
-    aside .menu-top > div {
+    aside .menu-top > div,
+    aside .menu-bottom > div {
         text-align: left;
-        padding-left: 20px;
     }
 
     aside .menu-top .home,
     aside .menu-top .search,
-    aside .menu-top .library {
+    aside .menu-top .library,
+    aside .menu-bottom .download,
+    aside .menu-bottom .user {
         display: flex;
         align-items: center;
     }
 
-
+    aside .menu-bottom .user {
+        border-top: 1px solid white;
+        padding-top: 10px;
+    }
 
     main {
         left: 200px;
@@ -257,10 +282,10 @@ footer {
 } */
 
 /* .debug aside .menu-top, */
-.debug aside .menu-bottom {
+/* .debug aside .menu-bottom {
     height: 100px;
     border: 2px solid red;
-}
+} */
 
 
 /* .debug main {
