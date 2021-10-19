@@ -17,10 +17,14 @@ body {
     display: none;
 }
 
-
 .header-lt,
 aside {
     width: 50px;
+}
+
+#small-logo,
+aside img {
+    width: 30px;
 }
 
 header,
@@ -49,8 +53,8 @@ header {
     align-items: center;
 }
 
-.header-lt img {
-    width: 70%;
+#big-logo {
+    width: 80%;
 }
 
 
@@ -75,6 +79,7 @@ header {
 
 aside {
     height: calc(100vh - 150px);
+    background-color: black;
 
     display: flex;
     flex-direction: column;
@@ -88,6 +93,11 @@ aside {
 aside .menu-top,
 aside .menu-bottom {
     width: 100%;
+}
+
+aside .menu-top > div {
+    text-align: center;
+    margin: 5px 0;
 }
 
 
@@ -139,6 +149,7 @@ footer {
         width: 200px;
     }
 
+
     .header-lt {
         height: 100px;
         justify-content: flex-start;
@@ -156,10 +167,25 @@ footer {
         width: calc(100% - 200px);
     }
 
+
     aside {
         height: calc(100vh - 200px);
         top: 100px;
     }
+
+    aside .menu-top > div {
+        text-align: left;
+        padding-left: 20px;
+
+        display: flex;
+        align-items: center;
+    }
+    
+    aside .menu-top > div span {
+        margin-left: 5px;
+    }
+
+
 
     main {
         left: 200px;
@@ -197,11 +223,11 @@ footer {
 }
 
 
-.debug aside {
+/* .debug aside {
     background-color: green;
-}
+} */
 
-.debug aside .menu-top,
+/* .debug aside .menu-top, */
 .debug aside .menu-bottom {
     height: 100px;
     border: 2px solid red;
