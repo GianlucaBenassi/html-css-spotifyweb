@@ -296,32 +296,29 @@ footer {
     main {
         left: 200px;
     }
+
 }
 
 
 /* ##### MD display ##### */
 
 @media screen and (min-width: 769px) {
-    body {
-        color: red;
-    }
 
     main .box-song {
         width: calc(100% / 4 - 20px);
     }
+
 }
 
 
 /* ##### LG display ##### */
 
 @media screen and (min-width: 1025px) {
-    body {
-        color: blue;
-    }
 
     main .box-song {
         width: calc(100% / 6 - 20px);
     }
+
 }
 
 
@@ -364,11 +361,11 @@ footer {
     background-color: brown;
 } */
 
-.debug main .recent .box-song {
+/* .debug main .recent .box-song {
     background-color: orange;
     height: 300px;
     border: 1px solid black;
-}
+} */
 
 .debug main .mix {
     height: 200px;
