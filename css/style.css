@@ -14,14 +14,20 @@ body {
 }
 
 
+.header-lt,
+aside {
+    width: 50px;
+}
+
+
 /* ***** header ***** */
 
 header {
     display: flex;
-}
-
-.header-lt {
-    width: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .header-rt {
@@ -30,6 +36,24 @@ header {
 }
 
 /* ***** aside menu ***** */
+
+aside {
+    height: calc(100vh - 50px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 50px;
+    left: 0;
+}
+
+aside .menu-top,
+aside .menu-bottom {
+    width: 100%;
+}
+
 
 /* ***** main ***** */
 
@@ -46,4 +70,14 @@ header {
 
 .debug .header-rt {
     background-color: #080B12;
+}
+
+.debug aside {
+    background-color: green;
+}
+
+.debug aside .menu-top,
+.debug aside .menu-bottom {
+    height: 100px;
+    border: 2px solid red;
 }
