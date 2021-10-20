@@ -195,7 +195,7 @@ main nav a.active::before {
     bottom: -5px;
     left: 50%;
     transform: translate(-50%, 0);
-    border-bottom: 2px solid #AFFF30;;
+    border-bottom: 2px solid #AFFF30;
 }
 
 
@@ -291,12 +291,36 @@ footer .bar {
     height: 5px;
     margin: 0 5px;
     border-radius: 5px;
+
+    position: relative;
 }
 
 footer .bar .progress {
     background-color: white;
     height: 100%;
     border-radius: 5px;
+}
+
+footer .bar .progress-circle {
+    display: none;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+footer .bar:hover .progress {
+    background-color: #AFFF30;
+    cursor: pointer;
+}
+
+footer .bar:hover .progress-circle {
+    display: block;
+    cursor: pointer;
 }
 
 
@@ -368,6 +392,11 @@ footer .bar .progress {
     font-size: 30px;
 }
 
+.footer-col.center .top .fa-play-circle:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .footer-col.center .bottom {
     display: flex;
     justify-content: space-between;
@@ -386,6 +415,11 @@ footer .bar .progress {
 .footer-col.center .bar .progress {
     width: 20%;
 }
+
+.footer-col.center .bar .progress-circle {
+    left: calc(20% - 15px / 2);
+}
+
 
 .footer-col.right {
     color: white;
@@ -407,6 +441,10 @@ footer .bar .progress {
 
 .footer-col.right .bar .progress {
     width: 30%;
+}
+
+.footer-col.right .bar .progress-circle {
+    left: calc(30% - 15px / 2);
 }
 
 /* ##### S display ##### */
