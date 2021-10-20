@@ -226,6 +226,21 @@ footer {
     justify-content: space-between;
 }
 
+footer .bar {
+    background-color: #5A5A5A;
+    width: 100%;
+    height: 5px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+footer .bar .progress {
+    background-color: white;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
 .footer-col {
     height: 100%;
 }
@@ -260,7 +275,35 @@ footer {
     margin: 0 5px;
 }
 
+.footer-col.center {
+    color: white;
+}
 
+.footer-col.center .top {
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-col.center .top i {
+    margin: 10px 8px;
+}
+
+.footer-col.center .top .fa-play-circle {
+    font-size: 30px;
+}
+
+.footer-col.center .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-col.center .bottom .bar .progress {
+    width: 20%;
+}
 
 /* ##### S display ##### */
 
