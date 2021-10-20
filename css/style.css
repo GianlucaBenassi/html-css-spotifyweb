@@ -329,9 +329,20 @@ footer .bar .progress {
     font-size: 12px;
 }
 
+.footer-col.left .song-info span:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .footer-col.left .icons i {
     font-size: 18px;
     margin: 0 5px;
+}
+
+.footer-col.left .icons i:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .footer-col.center {
