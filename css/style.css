@@ -229,7 +229,7 @@ footer {
 footer .bar {
     background-color: #5A5A5A;
     height: 5px;
-    margin: 0 10px;
+    margin: 0 5px;
     border-radius: 5px;
 }
 
@@ -276,6 +276,9 @@ footer .bar .progress {
 
 .footer-col.center {
     color: white;
+    width: 40%;
+    min-width: 190px;
+    padding: 0 10px;
 }
 
 .footer-col.center .top {
@@ -300,6 +303,11 @@ footer .bar .progress {
     align-items: center;
 }
 
+.footer-col.center .bottom .time, 
+.footer-col.center .bottom .tot-time {
+    font-size: 12px;
+} 
+
 .footer-col.center .bar {
     width: 100%;
 }
@@ -317,11 +325,17 @@ footer .bar .progress {
 }
 
 .footer-col.right i {
+    font-size: 14px;
     margin: 0 5px;
 }
 
 .footer-col.right .bar {
     width: 80px;
+    margin-right: 10px;
+}
+
+.footer-col.right .bar .progress {
+    width: 30%;
 }
 
 /* ##### S display ##### */
@@ -459,7 +473,7 @@ footer .bar .progress {
 } */
 
 
-.debug footer .footer-col {
-    /* width: 200px; */
+/* .debug footer .footer-col {
+    width: 200px;
     border: 2px solid yellow;
-}
+} */
