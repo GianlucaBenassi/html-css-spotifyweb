@@ -354,7 +354,10 @@ footer .bar .progress {
     
     aside {
         width: 200px;
-        padding: 0 20px;
+    }
+
+    aside .active {
+        border-left: 2px solid #AFFF30;
     }
 
     #small-logo {
@@ -364,6 +367,7 @@ footer .bar .progress {
     aside .menu-top > div,
     aside .menu-bottom > div {
         text-align: left;
+        padding: 0 20px;
     }
 
     aside .menu-top .home,
