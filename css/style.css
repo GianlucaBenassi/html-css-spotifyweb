@@ -185,7 +185,8 @@ main h5 {
     margin-top: 10px;
 }
 
-main h2, h5 {
+main h2, 
+main h5 {
     margin-left: 10px;
 }
 
@@ -228,6 +229,37 @@ footer {
 .footer-col {
     height: 100%;
 }
+
+
+.footer-col.left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-col.left img,
+.footer-col.left .song-info,
+.footer-col.left .icons {
+    margin-left: 10px;
+}
+
+.footer-col.left img {
+    width: 50px;
+}
+
+.footer-col.left .song-info h5 {
+    color: white;
+    font-size: 14px;
+}
+
+.footer-col.left .song-info span {
+    font-size: 12px;
+}
+
+.footer-col.left .icons i {
+    font-size: 18px;
+    margin: 0 5px;
+}
+
 
 
 /* ##### S display ##### */
@@ -320,15 +352,6 @@ footer {
 
 
 /* +++++ debug +++++ */
-
-.debug .header-lt {
-    background-color: black;
-}
-
-.debug .header-rt {
-    background-color: #080B12;
-}
-
 
 /* .debug aside {
     background-color: green;
