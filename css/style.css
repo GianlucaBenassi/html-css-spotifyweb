@@ -169,6 +169,20 @@ main nav ul li a {
     text-transform: uppercase;
 }
 
+main nav a.active {
+    position: relative;
+}
+
+main nav a.active::before {
+    content: "";
+    width: 50%;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-bottom: 2px solid #AFFF30;;
+}
+
 
 /* ----- main sections ----- */
 
