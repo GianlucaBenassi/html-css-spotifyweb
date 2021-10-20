@@ -216,12 +216,43 @@ main .box-song {
     margin: 10px;
 }
 
-main .box-song img {
-    width: 100%;
+main .box-song .img-box {
+    position: relative;
 }
 
-main .box-song.artist img {
+main .box-song img {
+    width: 100%;
+    display: block;
+}
+
+main .box-song.artist img,
+main .box-song.artist .layover  {
     border-radius: 50%;
+}
+
+main .box-song .layover {
+    display: none;
+}
+
+main .box-song .layover i {
+    color: white;
+    font-size: 60px;
+}
+
+main .box-song:hover {
+    cursor: pointer;
+}
+
+main .box-song:hover .layover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
 }
 
 /* ***** footer ***** */
