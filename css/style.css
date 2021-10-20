@@ -98,6 +98,13 @@ aside .menu-bottom > div {
     margin: 5px 0;
 }
 
+aside .menu-top span:hover,
+aside .menu-top .playlist ul li a:hover,
+aside .menu-bottom span:hover {
+    color: white;
+    cursor: pointer;
+}
+
 aside .menu-top .home span,
 aside .menu-top .search span,
 aside .menu-top .library span,
