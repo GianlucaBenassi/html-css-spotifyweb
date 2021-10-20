@@ -173,6 +173,10 @@ main nav ul li a {
     text-transform: uppercase;
 }
 
+main nav ul li a:hover {
+    color: white;
+}
+
 main nav a.active {
     position: relative;
 }
