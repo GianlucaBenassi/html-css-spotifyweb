@@ -283,7 +283,6 @@ footer {
     right: 0;
 
     display: flex;
-    justify-content: space-between;
 }
 
 footer .bar {
@@ -313,14 +312,16 @@ footer .bar .progress-circle {
     transform: translate(0, -50%);
 }
 
+footer .bar:hover {
+    cursor: pointer;
+}
+
 footer .bar:hover .progress {
     background-color: #AFFF30;
-    cursor: pointer;
 }
 
 footer .bar:hover .progress-circle {
     display: block;
-    cursor: pointer;
 }
 
 
@@ -332,6 +333,7 @@ footer .bar:hover .progress-circle {
 .footer-col.left {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .footer-col.left img,
@@ -342,6 +344,18 @@ footer .bar:hover .progress-circle {
 
 .footer-col.left img {
     width: 50px;
+}
+
+.footer-col.left img:hover ~ .song-info,
+.footer-col.left .song-info:hover {
+    background-color: rgba(0,0,0,0.8);
+    padding: 5px 20px;
+    border-radius: 10px;
+    display: block;
+
+    position: absolute;
+    left: 0;
+    top: -40px;
 }
 
 .footer-col.left .song-info h5 {
@@ -371,7 +385,7 @@ footer .bar:hover .progress-circle {
 
 .footer-col.center {
     color: white;
-    width: 40%;
+    width: 100%;
     min-width: 190px;
     padding: 0 10px;
 }
@@ -425,13 +439,13 @@ footer .bar:hover .progress-circle {
     color: white;
 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-col.right i {
     font-size: 14px;
-    margin: 0 5px;
+    margin: 5px;
 }
 
 .footer-col.right .bar {
@@ -512,6 +526,32 @@ footer .bar:hover .progress-circle {
 
     main {
         left: 200px;
+    }
+
+
+    footer {
+        justify-content: space-between;
+    }
+
+    .footer-col.left img:hover ~ .song-info,
+    .footer-col.left .song-info:hover {
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    footer .footer-col.center {
+        width: 40%;
+    }
+
+    footer .footer-col.right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
 }
